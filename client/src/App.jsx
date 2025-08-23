@@ -1,14 +1,19 @@
-import Container from "@components/Container";
+import React from "react";
+import Header from "@components/Header";
 
 const App = () => {
   return (
-    <div className=" text-foreground min-h-screen flex items-center bg-yellow-500">
-      <Container className="py-10 bg-card text-card-foreground rounded-lg border border-border shadow">
-        <h1 className="font-serif text-3xl mb-2">Container ✅</h1>
-        <p className="font-sans text-muted-foreground">
-          This content is centered, has a max width, and responsive padding.
-        </p>
-      </Container>
+    <div>
+      {" "}
+      <div className="bg-background text-foreground min-h-screen">
+        <Header />
+        <main className="p-6">
+          <h1 className="font-serif text-3xl">Hello, Nature Blog!</h1>
+          <p className="font-sans text-muted-foreground mt-2">
+            Navbar is sticky and responsive ✅
+          </p>
+        </main>
+      </div>
     </div>
   );
 };
