@@ -5,6 +5,7 @@ import Hero from "@screens/Hero";
 import DemoCards from "@screens/DemoCard";
 import PostsGrid from "@screens/PostGrid";
 import { demoPosts } from "@screens/PostGrid/data";
+import Explore from "@screens/Expolre";
 
 const App = () => {
   const many = [...demoPosts, ...demoPosts, ...demoPosts];
@@ -13,9 +14,10 @@ const App = () => {
       <Header />
       <main className="flex-1">
         <Hero />
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+        {/* <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
           <PostsGrid id="latest" title="LatestPost" items={many} perPage={6} />
-        </div>
+        </div> */}
+        <Explore />
       </main>
       <Footer />
     </div>
