@@ -17,6 +17,39 @@ const DemoCards = () => {
         readTime="4 min read"
         date="2025-08-20"
       />
+      <PostCard
+        href="/post/exploring-forests"
+        title="Exploring the Ancient Forests"
+        cover={cover}
+        coverAlt="Misty forest"
+        tag="Forest"
+        excerpt="From moss-laden trunks to canopies teeming with life, walk through the living archives of Earth."
+        author="Vishal"
+        readTime="4 min read"
+        date="2025-08-20"
+      />
+      <PostCard
+        href="/post/exploring-forests"
+        title="Exploring the Ancient Forests"
+        cover={cover}
+        coverAlt="Misty forest"
+        tag="Forest"
+        excerpt="From moss-laden trunks to canopies teeming with life, walk through the living archives of Earth."
+        author="Vishal"
+        readTime="4 min read"
+        date="2025-08-20"
+      />
+      <PostCard
+        href="/post/exploring-forests"
+        title="Exploring the Ancient Forests"
+        cover={cover}
+        coverAlt="Misty forest"
+        tag="Forest"
+        excerpt="From moss-laden trunks to canopies teeming with life, walk through the living archives of Earth."
+        author="Vishal"
+        readTime="4 min read"
+        date="2025-08-20"
+      />
     </section>
   );
 };

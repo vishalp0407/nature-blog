@@ -3,25 +3,19 @@ import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Hero from "@screens/Hero";
 import DemoCards from "@screens/DemoCard";
+import PostsGrid from "@screens/PostGrid";
+import { demoPosts } from "@screens/PostGrid/data";
 
 const App = () => {
+  const many = [...demoPosts, ...demoPosts, ...demoPosts];
   return (
     <div className="bg-background text-foreground min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
         <Hero />
-
-        {/* Later: attach id="latest" to the posts grid section */}
-        <section
-          id="latest"
-          className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10"
-        >
-          <h2 className="font-serif text-2xl md:text-3xl">Latest Posts</h2>
-          <p className="text-muted-foreground mt-2">
-            We’ll render the post cards here in S2.4–S2.5.
-          </p>
-        </section>
-        <DemoCards />
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
+          <PostsGrid id="latest" title="LatestPost" items={many} perPage={6} />
+        </div>
       </main>
       <Footer />
     </div>
