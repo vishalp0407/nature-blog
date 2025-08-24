@@ -2,12 +2,13 @@ import React from "react";
 import Header from "@components/Header";
 import Footer from "@components/Footer";
 import Hero from "@screens/Hero";
+import DemoCards from "@screens/DemoCard";
 
 const App = () => {
   return (
     <div className="bg-background text-foreground min-h-screen flex flex-col">
       <Header />
-      <main className="">
+      <main className="flex-1">
         <Hero />
 
         {/* Later: attach id="latest" to the posts grid section */}
@@ -20,6 +21,7 @@ const App = () => {
             We’ll render the post cards here in S2.4–S2.5.
           </p>
         </section>
+        <DemoCards />
       </main>
       <Footer />
     </div>
