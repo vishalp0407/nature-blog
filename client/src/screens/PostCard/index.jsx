@@ -4,6 +4,7 @@ import Tag from "./Tag";
 import Excerpt from "./Excerpt";
 import Title from "./Title";
 import Meta from "./Meta";
+import Hero from "@screens/Hero";
 
 const PostCard = ({
   href = "#",

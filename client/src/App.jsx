@@ -1,30 +1,36 @@
-import React from "react";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
-import Hero from "@screens/Hero";
-import DemoCards from "@screens/DemoCard";
-import PostsGrid from "@screens/PostGrid";
-import { demoPosts } from "@screens/PostGrid/data";
+import LayoutRoute from "@components/LayoutRoute.jsx";
 import Explore from "@screens/Expolre";
+import HomeScreen from "@screens/Home";
+import PostCard from "@screens/PostCard";
+
 import PostDetails from "@screens/PostDetails";
-import DummyPostDetails from "@screens/DummyPostDetails";
+import PostScreen from "@screens/PostScreen/inex";
+import React from "react";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "",
+    element: <LayoutRoute />,
+    children: [
+      {
+        index: true,
+        element: <HomeScreen />,
+      },
+      {
+        path: "/explore",
+        element: <Explore />,
+      },
+      {
+        path: "/post/:slug",
+        element: <PostScreen />,
+      },
+    ],
+  },
+]);
 
 const App = () => {
-  const many = [...demoPosts, ...demoPosts, ...demoPosts];
-  return (
-    <div className="bg-background text-foreground min-h-screen flex flex-col">
-      <Header />
-      <main className="flex-1">
-        <Hero />
-        {/* <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10">
-          <PostsGrid id="latest" title="LatestPost" items={many} perPage={6} />
-        </div> */}
-        <Explore />
-        <DummyPostDetails />
-      </main>
-      <Footer />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;
