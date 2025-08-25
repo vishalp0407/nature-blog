@@ -6,6 +6,8 @@ import DemoCards from "@screens/DemoCard";
 import PostsGrid from "@screens/PostGrid";
 import { demoPosts } from "@screens/PostGrid/data";
 import Explore from "@screens/Expolre";
+import PostDetails from "@screens/PostDetails";
+import DummyPostDetails from "@screens/DummyPostDetails";
 
 const App = () => {
   const many = [...demoPosts, ...demoPosts, ...demoPosts];
@@ -18,6 +20,7 @@ const App = () => {
           <PostsGrid id="latest" title="LatestPost" items={many} perPage={6} />
         </div> */}
         <Explore />
+        <DummyPostDetails />
       </main>
       <Footer />
     </div>
