@@ -3,7 +3,7 @@ import React from "react";
 const MenuButton = ({ open, setOpen }) => {
   return (
     <button
-      className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-border hover:bg-card"
+      className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border border-border hover:bg-card outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
       aria-label="Toggle menu"
       onClick={() => setOpen((v) => !v)}
     >

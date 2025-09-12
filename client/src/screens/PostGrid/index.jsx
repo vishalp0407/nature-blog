@@ -30,9 +30,9 @@ export default function PostsGrid({
 
       {/* Grid */}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {pageItems.map((p) => (
+        {pageItems.map((p, i) => (
           <PostCard
-            key={p.slug}
+            key={i + 1}
             href={`/post/${p.slug}`} // We'll switch to <Link> after router setup
             cover={p.cover}
             coverAlt={p.coverAlt}
