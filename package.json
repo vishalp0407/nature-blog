@@ -1,0 +1,31 @@
+{
+  "name": "nature-blog-with-admin-panel",
+  "version": "1.0.0",
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server/main.js",
+    "server": "nodemon server/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishalp0407/nature-blog.git"
+  },
+  "keywords": [],
+  "author": "Vishal Prajapati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishalp0407/nature-blog/issues"
+  },
+  "homepage": "https://github.com/vishalp0407/nature-blog#readme",
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "mongoose": "^8.18.1",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10"
+  }
+}
